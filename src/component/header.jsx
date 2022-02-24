@@ -28,7 +28,7 @@ function Header() {
                     ul{
                         display: ${hideclass ? 'none' : 'flex'}
                     }
-                    @media only screen and (max-width:375px){
+                    @media only screen and (max-width:500px){
                         nav{
                             display:inline;
                         }
