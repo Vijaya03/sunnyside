@@ -1,0 +1,111 @@
+.image-card{
+    
+}
+.milk{
+    background:url(../images/desktop/image-gallery-milkbottles.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.orange-plate{
+    background:url(../images/desktop/image-gallery-orange.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.cone{
+    background:url(../images/desktop/image-gallery-cone.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.cube{
+    background:url(../images/desktop/image-gallery-sugarcubes.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.footer-image{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height:350px;
+}
+.footer-links{
+    text-align:center;
+    background: hsl(146, 68%, 69%);
+}
+.footer-logo{
+    padding-top:4%;
+    font-size:1.5rem;
+    font-weight:900;
+    color:hsl(145, 34%, 36%)
+}
+.footer-nav{
+    padding-top:3%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap:45px;
+    color:hsl(145, 34%, 36%);
+    font-family: var(--Barlow);
+    font-weight:500;
+    font-size:.75rem;
+}
+.footer-social{
+    display:flex;
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 0 6% 0;
+}
+@media only screen and (max-width:375px){
+    .footer{
+        height:350px;
+    }
+    .footer-image{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .milk{
+        background:url(../images/mobile/image-gallery-milkbottles.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    .orange-plate{
+        background:url(../images/mobile/image-gallery-orange.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    .cone{
+        background:url(../images/mobile/image-gallery-cone.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    .cube{
+        background:url(../images/mobile/image-gallery-sugar-cubes.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    .footer-logo{
+        padding-top:10%;
+    }
+    .footer-nav{
+        padding-top:5%;
+    }
+    .footer-social{
+        padding: 15% 0 15% 0;
+    }
+
+}

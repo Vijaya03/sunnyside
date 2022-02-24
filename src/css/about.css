@@ -1,0 +1,61 @@
+.head-section{
+    width:100%;
+    text-align: center;
+    font-family: var(--Fraunce);
+    font-size:1rem;
+    letter-spacing: 3px;
+    font-weight:900;
+    color:hsl(213, 9%,65%);
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+.team-members{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 375px));
+    align-content: center;
+    justify-content: center;
+}
+.card{
+    text-align: center;
+    height: 500px;
+}
+.profile-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:35%;
+}
+.profile-pic > img{
+    width:60px;
+    height: 60px;
+    border-radius:50%;
+}
+.comment{
+    font-family: var(--Barlow);
+    font-weight:500;
+    color: hsl(213, 9%, 40%);
+    padding:0 31px  0 31px;
+}
+.name{
+    padding:20%;
+}
+.name-head{
+    font-family: var(--Fraunce);
+    font-weight: 900;
+} 
+.name-dec{
+    font-size:.75rem;
+    font-family: var(--Barlow);
+    color: hsl(213, 9%, 60%);
+    font-weight:500;
+    padding-top:5px;
+}
+@media only screen and (max-width:500px){
+    .card{
+        text-align: center;
+        height: 400px;
+    }
+    .profile-pic{
+        height:35%;
+    }
+}

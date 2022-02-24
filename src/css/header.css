@@ -1,0 +1,140 @@
+header{
+    width:100%;
+    min-height:500px;
+    background-image:url('../images/desktop/image-header.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+header > .container{
+    padding:1.5rem;
+}
+nav{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+ul{
+    flex-direction: row-reverse;
+    margin:15px;
+    padding:0;
+    list-style: none;
+    color:white;
+    flex-wrap: wrap;
+    cursor:pointer;
+}
+/* ul:first-of-type{
+    align-self:  flex-start
+} */
+/* ul > li{
+    display: none;
+} */
+ul > li > a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Barlow', sans-serif;
+    font-size:1.125;
+    font-weight: 400;
+    margin-left:1.875rem;
+}
+ul > li > a:hover{
+    text-transform: uppercase;
+    color:black;
+    font-family: 'Fraunces', serif;
+    font-size:14px;
+    background:white;
+    font-weight: 600;
+    padding:10px 22px 10px 22px;
+    border-radius:50px;
+}
+.menu{
+    display:none;
+}
+.logo{
+    font-weight: 800;
+    font-size:1.875rem;
+    font-family: 'Barlow', sans-serif;
+    color:white;
+}
+ 
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color:white;
+    font-size:1.8rem;
+    letter-spacing: 4.5px;
+    margin-top:4.375rem;
+    flex-wrap: wrap;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.125rem;
+}
+.hide-item{
+    display: none;
+}
+@media only screen and (max-width:375px){
+    .main{
+        position: relative;
+        font-size:2rem;
+    }
+    .main-head{ 
+        text-align: center;
+        height:0;
+    }
+    .arrow{
+        margin-top:1.75rem;
+    }
+    ul{
+        clip-path: polygon(0% 11%, 91% 11%, 100% 0, 100% 100%, 0 100%);
+        background-color: white;
+        display: none;
+        flex-direction: column-reverse;
+        height:250px;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin-left: 25px;
+        margin-right: 25px;
+     }
+    ul > li{
+        margin:10px;
+    }
+    ul > li > a{
+        color: hsl(210, 4%, 67%);
+        margin: 5px 0 32px 0;
+        font-size:1;
+        font-weight: 500;
+        font-family: 'Barlow', sans-serif;
+    }
+    ul > li > a:hover{
+        text-transform: uppercase;
+        color:black;
+        font-family: 'Fraunces', serif;
+        font-size:14px;
+        background: hsl(51, 100%, 49%);
+        font-weight: 600;
+        padding:10px 22px 10px 22px;
+        border-radius:50px;
+    }
+    .logo{
+        font-size:1.25rem
+    }
+    .menu{
+        cursor: pointer;
+        margin-top:0.563rem;
+        display: inline;
+        float:right;
+    }
+    
+    .hide-item{
+        display: none;
+    }
+} 
